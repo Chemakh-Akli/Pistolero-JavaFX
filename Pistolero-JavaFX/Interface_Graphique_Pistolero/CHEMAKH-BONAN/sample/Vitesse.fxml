@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Vitesse">
+   <children>
+      <Slider fx:id="sliderDemon" blockIncrement="1" layoutX="94.0" layoutY="127.0" majorTickUnit="1" max="10" min="1" prefHeight="16.0" prefWidth="430.0" showTickLabels="true" showTickMarks="true" />
+      <Slider fx:id="sliderPistolero" blockIncrement="1" layoutX="94.0" layoutY="251.0" majorTickUnit="1" max="10" min="1" prefHeight="16.0" prefWidth="430.0" showTickLabels="true" showTickMarks="true" />
+      <Button layoutX="495.0" layoutY="319.0" mnemonicParsing="false" onAction="#validerSlider" text="Valider" />
+      <Label layoutX="257.0" layoutY="78.0" text="Vitesse Démons" />
+      <Label layoutX="255.0" layoutY="200.0" text="Vitesse Pistolero" />
+   </children>
+</AnchorPane>

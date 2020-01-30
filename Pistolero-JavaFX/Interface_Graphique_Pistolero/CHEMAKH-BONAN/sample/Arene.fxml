@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="arene" prefHeight="617.0" prefWidth="1186.0" style="-fx-background-image: url('file:src/sample/background.jpg');-fx-background-repeat: stretch;-fx-background-size: 1186 617;" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Arene">
+   <children>
+      <Label fx:id="nbBalleLabel" layoutX="1086.0" layoutY="570.0" text="NB BALLES" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+      <MenuButton layoutY="-1.0" mnemonicParsing="false" text="Menu">
+        <items>
+          <MenuItem mnemonicParsing="false" onAction="#ouvreVitesse" text="Vitesse" />
+          <MenuItem mnemonicParsing="false" onAction="#ouvreCommande" text="Touches" />
+            <MenuItem mnemonicParsing="false" onAction="#save" text="Save" />
+            <MenuItem mnemonicParsing="false" onAction="#restore" text="Restore" />
+        </items>
+      </MenuButton>
+      <Label fx:id="nbdemonsLabel" layoutX="956.0" layoutY="570.0" text="NB DEMONS" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+      <Label fx:id="score" layoutX="877.0" layoutY="571.0" text="SCORE" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+   </children>
+</AnchorPane>

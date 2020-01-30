@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="commande_pane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Commande">
+   <children>
+      <Label layoutX="187.0" layoutY="14.0" prefHeight="31.0" prefWidth="210.0" text="Liste des commandes">
+         <font>
+            <Font name="DejaVu Sans Mono Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="select_avancer" layoutX="100.0" layoutY="80.0" mnemonicParsing="false" onAction="#avancer"  />
+      <Button fx:id="select_reculer" layoutX="100.0" layoutY="120.0" mnemonicParsing="false" onAction="#reculer"  />
+      <Button fx:id="select_gauche" layoutX="100.0" layoutY="160.0" mnemonicParsing="false" onAction="#gauche" />
+      <Button fx:id="select_droite" layoutX="100.0" layoutY="200.0" mnemonicParsing="false" onAction="#droite" prefHeight="26.0" prefWidth="68.0"  />
+      <Button fx:id="select_tirer" layoutX="100.0" layoutY="240.0" mnemonicParsing="false" onAction="#tirer" prefHeight="26.0" prefWidth="72.0" />
+      <Button fx:id="select_pause" layoutX="100.0" layoutY="280.0" mnemonicParsing="false" onAction="#pause" prefHeight="26.0" prefWidth="65.0"/>
+      <Button fx:id="select_confirm" layoutX="235.0" layoutY="329.0" mnemonicParsing="false" onAction="#confirm" text="Submit" />
+      <Label layoutX="32.0" layoutY="80.0" text="Avancer" />
+      <Label layoutX="32.0" layoutY="120.0" text="Reculer" />
+      <Label layoutX="32.0" layoutY="160.0" prefHeight="16.0" prefWidth="59.0" text="Gauche" />
+      <Label layoutX="32.0" layoutY="200.0" prefHeight="16.0" prefWidth="54.0" text="Droite" />
+      <Label layoutX="32.0" layoutY="240.0" prefHeight="16.0" prefWidth="54.0" text="Tirer" />
+      <Label layoutX="32.0" layoutY="280.0" prefHeight="16.0" prefWidth="54.0" text="Pause" />
+   </children>
+</AnchorPane>
